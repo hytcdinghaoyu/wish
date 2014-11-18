@@ -1,8 +1,8 @@
 
 $(function () {
 
-
-	setInterval('getMsg()',10000);
+	//每三秒获取最新的留言
+	setInterval('getMsg()',3000);
 
 	$(".paper").draggable();
 

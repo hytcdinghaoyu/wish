@@ -3,10 +3,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>HouDun许愿墙</title>
-	<link rel="stylesheet" href="/liuyan/Public/Css/index.css" />
-	<script type="text/javascript" src='/liuyan/Public/Js/jquery-1.7.2.min.js'></script>
-	<script type="text/javascript" src="/liuyan/Public/Js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src='/liuyan/Public/Js/index.js'></script>
+	<link rel="stylesheet" href="/wisher/Public/Css/index.css" />
+	<script type="text/javascript" src='/wisher/Public/Js/jquery-1.7.2.min.js'></script>
+	<script type="text/javascript" src="/wisher/Public/Js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src='/wisher/Public/Js/index.js'></script>
 	<script type="text/javascript">
 		var handleUrl = '<?php echo U("Home/Index/handle",'','');?>'
 	</script>
@@ -41,23 +41,23 @@
 				<label for="content">愿望：(您还可以输入&nbsp;<span id='font-num'>50</span>&nbsp;个字)</label>
 				<textarea name="content" id='content'></textarea>
 				<div id='phiz'>
-					<img src="/liuyan/Public/Images/phiz/zhuakuang.gif" alt="抓狂" />
-					<img src="/liuyan/Public/Images/phiz/baobao.gif" alt="抱抱" />
-					<img src="/liuyan/Public/Images/phiz/haixiu.gif" alt="害羞" />
-					<img src="/liuyan/Public/Images/phiz/ku.gif" alt="酷" />
-					<img src="/liuyan/Public/Images/phiz/xixi.gif" alt="嘻嘻" />
-					<img src="/liuyan/Public/Images/phiz/taikaixin.gif" alt="太开心" />
-					<img src="/liuyan/Public/Images/phiz/touxiao.gif" alt="偷笑" />
-					<img src="/liuyan/Public/Images/phiz/qian.gif" alt="钱" />
-					<img src="/liuyan/Public/Images/phiz/huaxin.gif" alt="花心" />
-					<img src="/liuyan/Public/Images/phiz/jiyan.gif" alt="挤眼" />
+					<img src="/wisher/Public/Images/phiz/zhuakuang.gif" alt="抓狂" />
+					<img src="/wisher/Public/Images/phiz/baobao.gif" alt="抱抱" />
+					<img src="/wisher/Public/Images/phiz/haixiu.gif" alt="害羞" />
+					<img src="/wisher/Public/Images/phiz/ku.gif" alt="酷" />
+					<img src="/wisher/Public/Images/phiz/xixi.gif" alt="嘻嘻" />
+					<img src="/wisher/Public/Images/phiz/taikaixin.gif" alt="太开心" />
+					<img src="/wisher/Public/Images/phiz/touxiao.gif" alt="偷笑" />
+					<img src="/wisher/Public/Images/phiz/qian.gif" alt="钱" />
+					<img src="/wisher/Public/Images/phiz/huaxin.gif" alt="花心" />
+					<img src="/wisher/Public/Images/phiz/jiyan.gif" alt="挤眼" />
 				</div>
 			</p>
 			<span id='send-btn'></span>
 		</form>
 	</div>
 <!--[if IE 6]>
-    <script type="text/javascript" src="/liuyan/Public/Js/iepng.js"></script>
+    <script type="text/javascript" src="/wisher/Public/Js/iepng.js"></script>
     <script type="text/javascript">
         DD_belatedPNG.fix('#send,#close,.close','background');
     </script>
