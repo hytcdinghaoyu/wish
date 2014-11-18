@@ -1,11 +1,19 @@
 <?php
+namespace Admin\Controller;
+use Think\Controller;
 	Class MsgManageController extends CommonController{
 		Public function index(){
-			import('ORG.Util.Page');
+			//import('ORG.Util.Page');
 
 			$count = M('wish')->count();
 
-			$page = new Page($count ,10);
+			//var_dump($count);
+
+			$page  = new \Think\Page($count,10);
+
+			// var_dump($Page);
+			// die();
+
 			$limit = $page->firstRow . ',' . $page->listRows;
 
 			$wish = M('wish')->order('time DESC')->limit($limit)->select();
