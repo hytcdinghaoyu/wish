@@ -102,26 +102,26 @@ $(function () {
 
 		$.post(handleUrl,{username :username.val(),content:content.val()},function (data){
 			if(data.status){
-			var str ='<dl class="paper a1">';
-			str += '<dt><span class="username">'+data.username+'</span>';
-			str +='<span class="num">No.'+data.id+'</span>';
-			str +='</dt><dd class="content">'+data.content+'</dd>';
-			str +='<dd class="bottom"><span class="time">'+data.time+'</span>';
-			str +='<span class="city">来自：'+data.city+'</span>';
-			str +='<a href="" class="close"></a>';
-			str +='</dd></dl>';
+				var str ='<dl class="paper a1">';
+				str += '<dt><span class="username">'+data.username+'</span>';
+				str +='<span class="num">No.'+data.id+'</span>';
+				str +='</dt><dd class="content">'+data.content+'</dd>';
+				str +='<dd class="bottom"><span class="time">'+data.time+'</span>';
+				str +='<span class="city">来自：'+data.city+'</span>';
+				str +='<a href="" class="close"></a>';
+				str +='</dd></dl>';
 
-			$('#main').append(str);
-			$('#close').click();
+				$('#main').append(str);
+				$('#close').click();
 
-			$(".paper").draggable();
-			
+				$(".paper").draggable();
+				
 
 			}
 
 
 			else{
-			alert('发布失败');
+				alert('发布失败');
 			}
 		},'json')
 		
@@ -210,6 +210,7 @@ function getMsg(){
 	$.post("Home/index/getMsg",{count:count},function(data){
 
 		$.each(data,function(){
+
 			if (this.status) {
 				var str ='<dl class="paper a1">';
 				str += '<dt><span class="username">'+this.username+'</span>';
